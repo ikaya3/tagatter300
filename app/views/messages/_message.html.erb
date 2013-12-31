@@ -1,5 +1,5 @@
 <tr>
 <td><%= message.user && message.user.username %></td>
 <td><%= message.created_at.strftime("%Y/%m/%d %H:%M:%S") %></td>
-<td><%= message.body %></td>
+<td><%= auto_link(h(message.body)) %></td>
 </tr>
