@@ -9,6 +9,9 @@ gem 'devise', '1.1.6'
 
 gem 'bcrypt-ruby', '2.1.2'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
