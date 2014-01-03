@@ -6,12 +6,23 @@
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
 
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<body class="<%= controller.controller_name %>">
 
-<%= yield %>
+  <div id="banner"> 
+    <h1><%= link_to "Tagatter", :root %></h1>
+  </div>
+
+  <div id="column">
+    <div id="side">
+    </div>
+
+    <div id="main">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </div>
+  </div>
 
 </body>
 </html>
