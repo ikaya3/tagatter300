@@ -1,3 +1,28 @@
+#top-menu {
+  background: #002;
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+
+  ul {
+    display: inline;
+    list-style: none;
+    margin-right: 0.3em;
+  }
+
+  li {
+    color: #eee;
+    display: inline;
+    font-size: 70%;
+    left-margin: 0.5em;
+  }
+
+  a {
+    color: #eee;
+    font-weight: bold;
+  }
+}
+
 #banner {
   padding: 10px 30px;
   background: #ddf;

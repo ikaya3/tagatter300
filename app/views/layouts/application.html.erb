@@ -9,21 +9,27 @@
 
 <body class="<%= controller.controller_name %>">
 
-  <div id="banner"> 
+  <div id="top-menu">
+    <ul>
+      <% if user_signed_in? %>
+      <li>ログイン中：<%= current_user.username %></li>
+      <li><%= link_to "個人設定", edit_user_registration_path(current_user) %></li>
+      <li><%= link_to "ログアウト", destroy_user_session_path %></li>
+      <% else %>
+      <li><%= link_to "ログイン", new_user_session_path %></li>
+      <li><%= link_to "ユーザー登録", new_user_registration_path %></li>
+      <li><%= link_to "パスワード再発行", new_user_password_path %></li>
+      <% end %>
+    </ul>
+  </div>
+
+  <div id="banner">
     <h1><%= link_to "Tagatter", :root %></h1>
   </div>
 
   <div id="column">
     <div id="side">
-      <% if user_signed_in? %>
-      <p><%= current_user.username %></p>
-      <p><%= link_to "ログアウト", destroy_user_session_path %></p>
-      <p><%= link_to "変更", edit_user_registration_path(current_user) %></p>
-      <% else %>
-      <p><%= link_to "ログイン", new_user_session_path %></p>
-      <p><%= link_to "ユーザー登録", new_user_registration_path %></p>
-      <p><%= link_to "パスワード再発行", new_user_password_path %></p>
-      <% end %>
+      持て余すサイドバー！
     </div>
 
     <div id="main">
