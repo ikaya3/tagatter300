@@ -1,13 +1,3 @@
-<% if user_signed_in? %>
-<p><%= current_user.username %></p>
-<p><%= link_to "ログアウト", destroy_user_session_path %></p>
-<p><%= link_to "変更", edit_user_registration_path(current_user) %></p>
-<% else %>
-<p><%= link_to "ログイン", new_user_session_path %></p>
-<p><%= link_to "ユーザー登録", new_user_registration_path %></p>
-<p><%= link_to "パスワード再発行", new_user_password_path %></p>
-<% end %>
-
 <%= form_for(Message.new) do |f| %>
   <div class="field">
     <%= f.text_area :body, :rows => 3, :cols => 40 %>
