@@ -1,0 +1,19 @@
+#banner {
+  padding: 10px 30px;
+  background: #ddf;
+  border-bottom: 2px solid;
+}
+
+#column {
+  width: 900px;
+  margin: 0 auto;
+
+  #side {
+    float: left;
+    width: 200px;
+  }
+
+  #main {
+  }
+}
+
