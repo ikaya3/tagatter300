@@ -9,7 +9,7 @@ gem 'devise', '1.1.6'
 
 gem 'bcrypt-ruby', '2.1.2'
 
-gem 'carrierwave'
+gem "paperclip"
 gem 'rmagick'
 
 # Bundle edge Rails instead:
