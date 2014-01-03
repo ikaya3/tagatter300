@@ -12,6 +12,9 @@ gem 'bcrypt-ruby', '2.1.2'
 gem "paperclip"
 gem 'rmagick'
 
+gem 'haml-rails'
+gem 'sass'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
