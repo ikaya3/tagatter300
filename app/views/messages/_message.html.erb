@@ -1,5 +1,6 @@
 <tr>
 <td><%= message.user && message.user.username %></td>
+<td><%= image_tag message.user.icon.url(:thumb) %></td>
 <td><%= message.created_at.strftime("%Y/%m/%d %H:%M:%S") %></td>
 <td><%= auto_link(h(message.body)) %></td>
 </tr>
