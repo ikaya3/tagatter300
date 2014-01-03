@@ -1,0 +1,46 @@
+@mixin min-height($val) {
+  min-height:$val;
+  height:auto !important;
+  height:$val;
+}
+
+.entry {
+  @include min-height(76px);
+  border-bottom: 1px solid #888;
+
+  .thumb {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    display: inline;
+    line-height: 70px;
+    float: left;
+    padding: 1px 3px 3px;
+
+    img {
+      vertical-align: middle;
+    }
+  }
+
+  .info {
+    font-size: 80%;
+
+    .username {
+      float: left;
+      font-weight: bold;
+    }
+    .datetime {
+      text-align: right;
+    }
+  }
+
+  .message {
+    margin-left: 85px;
+    margin-bottom: 5px;
+
+    p {
+      margin: 0px;
+      padding: 0px;
+    }
+  }
+}
