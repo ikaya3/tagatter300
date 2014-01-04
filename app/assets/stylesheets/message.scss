@@ -1,12 +1,19 @@
+@import "compass/css3";
+
 @mixin min-height($val) {
   min-height:$val;
   height:auto !important;
   height:$val;
 }
 
+@mixin line-bottom($op1: .1, $op2: 1.0) {
+  border-bottom: 1px solid rgba(0,0,0,$op1);
+  @include box-shadow(rgba(255,255,255,$op2) 0 1px 0);
+}
+
 .entry {
   @include min-height(76px);
-  border-bottom: 1px solid #888;
+  @include line-bottom(.2, .7);
 
   .thumb {
     width: 70px;

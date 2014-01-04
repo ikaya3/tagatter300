@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 #top-menu {
   background: #002;
   text-align: right;
@@ -25,21 +27,37 @@
 
 #banner {
   padding: 10px 30px;
+  margin: 0px;
   background: #ddf;
   border-bottom: 2px solid;
+
+  a {
+    color: #666;
+    text-shadow: -1px 1px 0 rgba(255,255,255,.8);
+    text-decoration: none;
+  }
 }
 
-#column {
-  width: 900px;
-  margin: 0 auto;
+#body {
+  padding: 5px;
+  background: #e8e8e8;
 
-  #side {
-    float: left;
+  #column {
     background: #eee;
-    width: 200px;
-  }
+    padding: 5px 20px;
+    width: 900px;
+    margin: 0 auto;
 
-  #main {
-    margin-left: 215px;
+    #side {
+      float: left;
+      width: 200px;
+      background: #ddd;
+      border: solid 1px #aaa;
+      @include border-radius(6px);
+    }
+
+    #main {
+      margin-left: 215px;
+    }
   }
 }

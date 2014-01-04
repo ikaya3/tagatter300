@@ -1,0 +1,17 @@
+@import "compass/css3";
+
+.message_form {
+  padding: 1px;
+
+  .field {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  textarea {
+//    float: left;
+  }
+  submit {
+    //  @include border-radius(6px);
+  }
+}
