@@ -14,6 +14,8 @@ gem 'rmagick'
 
 gem 'haml-rails'
 gem 'sass'
+gem 'compass'
+gem 'compass-rails'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
