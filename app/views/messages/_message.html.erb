@@ -3,8 +3,13 @@
     <%= image_tag message.user.icon.url(:thumb) %>
   </div>
   <div class="info">
-    <div class="username">
-      <%= message.user && message.user.username %>
+    <div class="user">
+      <span class="name">
+        <%= message.user && message.user.username %>
+      </span>
+      <span class="id">
+        <%= message.user && "@" + message.user.userid %>
+      </span>
     </div>
     <div class="datetime">
       <%= message.created_at.strftime("%Y/%m/%d %H:%M:%S") %>

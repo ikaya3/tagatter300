@@ -32,9 +32,14 @@
   .info {
     font-size: 80%;
 
-    .username {
+    .user {
       float: left;
-      font-weight: bold;
+      .name {
+        font-weight: bold;
+      }
+      .id {
+        color: #888
+      }
     }
     .datetime {
       text-align: right;
